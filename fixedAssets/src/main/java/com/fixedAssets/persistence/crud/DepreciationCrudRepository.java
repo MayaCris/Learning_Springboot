@@ -8,5 +8,6 @@ import java.util.Optional;
 
 public interface DepreciationCrudRepository extends CrudRepository<Depreciation, Integer> {
 
-    Optional<List<Depreciation>> findAllByAssetId (int assetId);
+    Optional<List<Depreciation>> findByDepreciationId (int assetId);
+    Optional<List<Depreciation>> findByAssetId (int assetId);
 }

@@ -8,8 +8,9 @@ import java.util.Optional;
 public interface AssetTypeDoRepository {
 
     List<AssetTypeDo> getAll();
-    Optional<AssetTypeDo> getById(int typeIdD);
-
+    Optional<List<AssetTypeDo>> findByTypeIdD(int typeIdD);
+    AssetTypeDo save (AssetTypeDo assetTypeDo);
+    void delete (int typeIdD);
 
 
 

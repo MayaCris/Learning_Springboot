@@ -7,6 +7,8 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;
 
+import java.util.List;
+
 @Mapper(componentModel = "spring", uses = {FixedAssetMapper.class})
 public interface DepreciationMapper {
 
@@ -18,6 +20,7 @@ public interface DepreciationMapper {
             @Mapping(source = "fixedAsset", target = "fixedAssetDo")
     })
     DepreciationDo toDepreciationDo (Depreciation depreciation);
+    List<DepreciationDo> toDepreciationDoList (List<Depreciation> depreciations);
 
     @InheritInverseConfiguration
     Depreciation toDepreciation (DepreciationDo depreciationDo);
