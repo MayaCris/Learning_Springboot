@@ -7,6 +7,8 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;
 
+import java.util.List;
+
 @Mapper(componentModel = "spring")
 public interface ResponsiblePersonMapper {
 
@@ -17,6 +19,7 @@ public interface ResponsiblePersonMapper {
 
     })
     ResponsiblePersonDo toResponsiblePersonDo (ResponsiblePerson responsiblePerson);
+    List<ResponsiblePersonDo> toResponsiblePersonDoList (List<ResponsiblePerson> responsiblePersonList);
 
     @InheritInverseConfiguration
     @Mapping(target = "fixedAssets", ignore = true)

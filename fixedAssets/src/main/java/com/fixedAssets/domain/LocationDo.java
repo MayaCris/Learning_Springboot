@@ -2,7 +2,7 @@ package com.fixedAssets.domain;
 
 public class LocationDo {
 
-    private Integer locationIdD;
+    private Integer locationIdDo;
     private String locationNameD;
     private String locationAddressD;
     private String locationCityD;
@@ -11,12 +11,12 @@ public class LocationDo {
     //Getters and Setters
 
 
-    public Integer getLocationIdD() {
-        return locationIdD;
+    public Integer getLocationIdDo() {
+        return locationIdDo;
     }
 
-    public void setLocationIdD(Integer locationIdD) {
-        this.locationIdD = locationIdD;
+    public void setLocationIdDo(Integer locationIdDo) {
+        this.locationIdDo = locationIdDo;
     }
 
     public String getLocationNameD() {

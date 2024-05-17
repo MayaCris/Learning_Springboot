@@ -1,13 +1,19 @@
 package com.fixedAssets.persistence.entity;
 
 
+
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
+
+
+import java.time.LocalDateTime;
+import java.util.List;
+
 @Entity
-@Table(name = "FIXED_ASSETS")
+@Table(name = "FIXED_ASSET")
 public class FixedAsset {
 
     @Id
@@ -39,7 +45,7 @@ public class FixedAsset {
     @Column(name = "PERSON_ID")
     private String personId;
 
-    @OneToMany(mappedBy = "fixedAsset")
+    @OneToMany(mappedBy = "fixedAsset", cascade = {CascadeType.ALL})
     private List<Depreciation> depreciations;
 
     @ManyToOne

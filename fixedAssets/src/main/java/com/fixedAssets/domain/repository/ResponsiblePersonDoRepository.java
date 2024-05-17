@@ -10,6 +10,6 @@ public interface ResponsiblePersonDoRepository {
     List<ResponsiblePersonDo> getAll();
     Optional<List<ResponsiblePersonDo>> getBypersonIdD(String personIdD);
     ResponsiblePersonDo savePerson(ResponsiblePersonDo responsiblePersonDo);
-    
+    void deletePerson(String personIdD);
 
 }

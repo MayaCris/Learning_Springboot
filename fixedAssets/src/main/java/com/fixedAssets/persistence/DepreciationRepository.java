@@ -46,4 +46,6 @@ public class DepreciationRepository implements DepreciationDoRepository {
         return mapper.toDepreciationDo(depreciationCrudRepository.save(depreciation));
     }
 
+
+
 }

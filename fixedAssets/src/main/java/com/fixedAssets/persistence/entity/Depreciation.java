@@ -23,6 +23,7 @@ public class Depreciation {
     private Double depreciationValue;
 
     @ManyToOne
+    @MapsId("assetId")
     @JoinColumn(name = "ASSET_ID",insertable = false, updatable = false)
     private FixedAsset fixedAsset;
 
