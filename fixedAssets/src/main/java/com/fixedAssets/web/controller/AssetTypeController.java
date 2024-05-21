@@ -30,7 +30,7 @@ public class AssetTypeController {
             @ApiResponse(responseCode = "500", description = "Error interno del servidor",
                     content = @Content)
     })
-    @GetMapping("/allTypes")
+    @GetMapping("/all")
     public ResponseEntity<List<AssetTypeDo>> getAll() {
         return new ResponseEntity<>(assetTypeService.getAll(), HttpStatus.OK);
     }

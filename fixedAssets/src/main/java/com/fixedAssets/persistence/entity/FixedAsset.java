@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @Entity
-@Table(name = "FIXED_ASSET")
+@Table(name = "FIXED_ASSETS")
 public class FixedAsset {
 
     @Id
